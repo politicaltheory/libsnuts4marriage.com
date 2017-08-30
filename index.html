@@ -113,16 +113,6 @@ main {
   bottom: 0;
   height: 64px;
 }
-#game #indicator {
-  width: 8px;
-  height: 32px;
-  margin-left: -4px;
-  will-change: transform;
-  background: red;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
 #game .asteroid {
   will-change: transform;
   transition: transform 3.8s ease-in, opacity 0.2s 3.8s ease-out;
@@ -186,43 +176,24 @@ dt {
 </header>
 
 <main>
-  <h3>Redefining marriage has consequences for all Australians</h3>
+  <h3>Just do the right thing!</h3>
 
-  <p>The postal <del>plebiscite</del> <span class="add">vote</span> is a <del>referendum</del> <span class="add">survey</span> on freedom of speech and <del>and who decides what our children can be taught in schools</del> <span class="add">how we treat everyone in our society as equals</span>.</p>
-
-  <p>If marriage is redefined our right to freely <del>express the view that marriage should be between a man and a woman would be at risk</del> marry the person you love. Schools will <del>be told what to teach</del> do what they want, freedom of religion <del>would be challenged</del> causes so many problems, and <del>the tyranny of political correctness</del> being respectful to other people will <del>march further into our lives</del> make Australia a better place.</p>
-
-  <p>The Liberal and Nationals parties have a proud tradition of protecting the institutions that <del>make our society great</del> support the Liberal and National parties.</p>
-
-  <p><del>The family is the central unit of our society</del> <span class="add">Families come in all shapes and sizes</span> and marriage is <del>the foundation of all families</del><span class="add">a fun thing that some families choose to do</span>. We should be wary of changing what has worked. That is why we support giving all Australians a say on how marriage is defined <span class="add">(although it would be way easier to just do the right thing and sort this out in Parliament).</p>
-
-  <p>The Leader of the Liberal <del>and Nationals parties</del> party believe that marriage should <del>remain as the union of one man and one woman</del> be updated. <del>It is this union that creates children and it is this union that deserves protection. Liberal and Nationals party units across Australia have passed motions in support of traditional marriage.</del></p>
-
-  <p>A redefinition of marriage would be a “green light” for the radical and life saving Safe Schools program to spread throughout Australia. This has been the <del>bitter</del> experience in other countries that have redefined marriage.</p>
-
-  <p>We are sick of <del>being bullied and</del> our politians <del>told what to do</del> <span class="add">being beholden to the far right of their parties</span>. <del>We are the underdogs. Big business, big unions, big media (including the ABC) are all against us in this debate. But we will tirelessly oppose political correctness and fight for the truth.</del><span class="add">The ABC has some truly amazing shows and were lucky to have it!</span></p>
-
-  <p>Please join us to protect freedom of speech and the right of all <del>parents to decide what their children are taught at school</del> people. You can do so by agreeing to volunteer, donate to the campaign or spread this message with your friends and family. You can do all of these things by clicking on the buttons above.
-
-  <p>We need your help! Thank you for your support.</p>
+  <p>Vote for equality!</p>
 
   <h3>FAQ</h3>
 
   <dl>
-    <dt>I heard this will lead to people being able to marry the Sydney Harbour Bridge? 🌉</dt>
-    <dd>That's ridiculous and you know it. You should be ashamed. And besides, the bridge is cool.</dd>
-
     <dt>I'm confused about this "do the right thing" thing.</dt>
-    <dd>Try it and you'll see how good it feels. It even works on other complex political topics like climate change, refugees, the economy, and dealing with your citizenship issues.</dd>
-
-    <dt>I'm not a bigot, I just have strong feelings about marriage.</dt>
-    <dd>That's OK, I'm sure you're not racist or sexist either... 😜</dd>
+    <dd>Try it and you'll see how good it feels! It really works!</dd>
 
     <dt>I'd vote yes, but I'm thinking of boycotting in order to ... reasons.</dt>
-    <dd>Your reasons are almost certainly wrong. Vote!</dd>
+    <dd>Boycotting is not <em>the right thing</em>. Vote!</dd>
 
-    <dt>The bible says this is wrong.</dt>
-    <dd>Citation needed.</dd>
+    <dt>I heard this will lead to people being able to marry the Sydney Harbour Bridge? 🌉</dt>
+    <dd>The bridge isn't interested in you, we checked. But Sidney should be able to marry Bridget.</dd>
+
+    <dt>The postal plebiscite is a referendum on freedom of speech and who decides what our children can be taught in schools.</dt>
+    <dd>That's not a question. Also it's a non-binding, non-compulsory survey.</dd>
   </dl>
 </main>
 
@@ -232,7 +203,6 @@ dt {
 </footer>
 
 <div id="game">
-  <div id="indicator"></div>
 </div>
 
 <script>
@@ -249,10 +219,9 @@ document.body.addEventListener('click', function(ev) {
   asteroid.style.left = ev.screenX + 'px';
 
   var rotate = (Math.random() * 30) - 15;
-  asteroid.style.transform = 'rotate(' + rotate + 'deg) translateY(-115vh)';
+  asteroid.style.transform = 'rotate(' + rotate + 'deg) translateY(-105vh)';
 
-  var start = (Math.random() * 2);
-  asteroid.style.animationDelay = start + 's';
+  asteroid.style.animationDelay = '0s';
 
   if (Math.random() < 0.5) {
     asteroid.style.animationDirection = 'reverse';
