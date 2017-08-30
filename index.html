@@ -3,21 +3,97 @@
 <head>
   <title>Lib 🌰 For Marriage</title>
   <style>
+body {
+  margin: 0;
+  background: #121a22;
+  font-family: 'Exo 2', 'Arial', Sans-Serif;
+  font-size: 20px;
+}
+a {
+  color: #5a8db7;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+header {
+  border-bottom: 4px solid #374756;
+  background: url(assets/header.jpeg) center no-repeat;
+  background-size: cover;
+  height: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  color: white;
+  text-shadow: 0 4px 24px black;
+  font-size: 40px;
+}
+@media (max-width: 1024px) {
   body {
-    min-height: 100vh;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 14px;
   }
+  header {
+    font-size: 24px;
+  }
+}
+header h1, h2 {
+  margin: 0;
+}
+header h2 {
+  font-weight: 300;
+  font-family: 'Comic Sans MS', 'Arial', Serif;
+}
+
+footer {
+  padding: 4em;
+  color: #586269;
+}
+
+.fade {
+  opacity: 1;
+  will-change: opacity;
+  font-size: 0.8em;
+  vertical-align: center;
+  animation: fadein 5s;
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+main {
+  padding: 4em;
+  margin: 0;
+  background: #e1ecf4;
+}
+
   </style>
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:400,400i,600" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, user-scalable=no" />
   <link rel="shortcut icon" type="image/png" href="assets/icon-64.png" />
   <meta name="theme-color" content="#673ab7" />
 </head>
 <body>
 
-<h1>do the right thing fuckwits</h1>
+<header>
+
+  <h1>Liberals are Nuts</h1>
+  <h2><span class="fade">🌈️</span>
+    For Marriage
+  <span class="fade">🌈️</span></h2>
+
+</header>
+
+<main>
+  <h3>do the right thing fuckwits</h3>
+</main>
+
+<footer>
+  <p>Not authorized as this is NOT AN ELECTION, but you should vote anyway</p>
+  <p>Follow us on <a href="https://twitter.com/LibNutMarriage" target="_blank">Twitter</a>.</p>
+</footer>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
