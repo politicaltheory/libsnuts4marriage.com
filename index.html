@@ -113,6 +113,16 @@ main {
   bottom: 0;
   height: 64px;
 }
+#game #indicator {
+  width: 8px;
+  height: 32px;
+  margin-left: -4px;
+  will-change: transform;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 #game .asteroid {
   will-change: transform;
   transition: transform 3.8s ease-in, opacity 0.2s 3.8s ease-out;
@@ -222,10 +232,15 @@ dt {
 </footer>
 
 <div id="game">
+  <div id="indicator"></div>
 </div>
 
 <script>
+document.body.addEventListener('mousemove', function(ev) {
+  indicator.style.transform = 'translate(' + ev.screenX + 'px)';
+});
 document.body.addEventListener('click', function(ev) {
+  ga('send', 'event', 'page', 'asteroid');
 
   var asteroid = document.createElement('div');
   asteroid.className = 'asteroid';
@@ -233,8 +248,8 @@ document.body.addEventListener('click', function(ev) {
 
   asteroid.style.left = ev.screenX + 'px';
 
-  var rotate = (Math.random() * 60) - 30;
-  asteroid.style.transform = 'rotate(' + rotate + 'deg) translateY(-110vh)';
+  var rotate = (Math.random() * 30) - 15;
+  asteroid.style.transform = 'rotate(' + rotate + 'deg) translateY(-115vh)';
 
   var start = (Math.random() * 2);
   asteroid.style.animationDelay = start + 's';
@@ -250,7 +265,7 @@ document.body.addEventListener('click', function(ev) {
 
   window.setTimeout(function() {
     asteroid.remove();
-  }, 2500);
+  }, 5000);
 
 });
 </script>
